@@ -18,12 +18,10 @@ if ('en-us' == $lang) {
     setlocale(LC_ALL, 'en_US');
 } else if ('zh-tw' == $lang) {
     putenv('LANG=zh_TW');
-    setlocale(LC_ALL, 'zh_TW'); // bsd use zh_TW.BIG5
-	header('Content-type: text/html; charset=big5');
+    setlocale(LC_ALL, 'zh_TW');
 } else if ('zh-cn' == $lang) {
     putenv('LANG=zh_CN');
-    setlocale(LC_ALL, 'zh_CN'); // bsd use zh_CN.GBK
-	header('Content-type: text/html; charset=gbk');
+    setlocale(LC_ALL, 'zh_CN');
 }
 
 define('PACKAGE', 'demo');
@@ -31,4 +29,5 @@ define('PACKAGE', 'demo');
 // gettext ³]©w
 bindtextdomain(PACKAGE, 'lang'); // or $your_path/lang, ex: /var/www/test/lang
 textdomain(PACKAGE);
+bind_textdomain_codeset (PACKAGE, "utf-8");
 ?>
