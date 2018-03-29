@@ -2,6 +2,9 @@
 /*
  * 張文相 Zhang Wenxiang - 個人 Blog
  * https://blog.reh.tw/
+ *
+ * 範例教學
+ * https://blog.reh.tw/gettext-multi-language-website/
  */
 include_once("languages/setlang.php"); //引入語言設定文件
 ?>

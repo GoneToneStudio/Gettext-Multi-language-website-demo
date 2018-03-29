@@ -2,6 +2,9 @@
 /*
  * 張文相 Zhang Wenxiang - 個人 Blog
  * https://blog.reh.tw/
+ *
+ * 範例教學
+ * https://blog.reh.tw/gettext-multi-language-website/
  */
 preg_match("/^([a-z\-]+)/i", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $matches); //分析 HTTP_ACCEPT_LANGUAGE 的屬性
 
