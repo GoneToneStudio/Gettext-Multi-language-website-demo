@@ -10,15 +10,15 @@ include_once("languages/languages.php"); //引入語言設定文件
 ?>
 <html>
 <head>
-	<title><?php echo _('Gettext Multi-language website demo'); ?></title>
+    <title><?php echo _('Gettext Multi-language website demo'); ?></title>
 </head>
 <body>
-	<h1><?php echo _('Gettext Multi-language website demo'); ?></h1>
-	<hr><br>
-	<p><font color="#ff0000"><?php echo _('Hello world'); ?></font></p>
+    <h1><?php echo _('Gettext Multi-language website demo'); ?></h1>
+    <hr><br>
+    <p><font color="#ff0000"><?php echo _('Hello world'); ?></font></p>
     <br>
-	<h3><?php echo _('language selection'); ?></h3>
-	<a href="setlang.php?lang=zh_TW"><?php echo _('Traditional Chinese'); ?></a> <a href="setlang.php?lang=zh_CN"><?php echo _('Simplified Chinese'); ?></a> <a href="setlang.php?lang=en_US"><?php echo _('English'); ?></a>
+    <h3><?php echo _('language selection'); ?></h3>
+    <a href="setlang.php?lang=zh_TW"><?php echo _('Traditional Chinese'); ?></a> <a href="setlang.php?lang=zh_CN"><?php echo _('Simplified Chinese'); ?></a> <a href="setlang.php?lang=en_US"><?php echo _('English'); ?></a>
     <br><br>
     $_COOKIE["lang"]: <font color="#ff0000"><?php echo $_COOKIE["lang"]; ?></font>
     <br><br><br><hr>
