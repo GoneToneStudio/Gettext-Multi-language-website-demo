@@ -8,6 +8,12 @@
  */
 $lang = $_GET["lang"]; //取得 lang 參數
 
+if ($lang == null) { //如果網址的 lang 參數為空
+    //header('Location: '.getenv("HTTP_REFERER")); //返回原頁面
+    echo '$_GET["lang"] is null.';
+    exit;
+}
+
 if ($lang == "en_US") { //English
     setcookie("lang", "en_US", time() + (86400 * 30), "/"); //設定 Cookie lang 為 en_US
     header('Location: '.getenv("HTTP_REFERER")); //返回原頁面
